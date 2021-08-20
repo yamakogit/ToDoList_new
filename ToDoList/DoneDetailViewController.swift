@@ -35,7 +35,7 @@ class DoneDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var startTime = selectedDonetodoData["startTime"] as! String  //ここにエラーが出る
+        var startTime = selectedDonetodoData["startTime"] as! String  //ここにエラーが出る!!
         var endTime = selectedDonetodoData["endTime"] as! String
         let Todotitle = selectedDonetodoData ["Todotitle"] as! String
         let roopinterval = selectedDonetodoData ["roopinterval"] as! String
