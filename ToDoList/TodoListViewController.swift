@@ -139,8 +139,11 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
-        return sectionTitle[section] as? String
+        if filterSitiation != 0 {
+            return sectionTitleForFilter[section] as? String
+        } else {
+            return sectionTitle[section] as? String
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

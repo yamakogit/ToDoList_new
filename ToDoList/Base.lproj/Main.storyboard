@@ -570,9 +570,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="A5z-rV-qm2" kind="show" identifier="" id="wFQ-sW-7pt"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -586,6 +583,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="mdl-B6-1pQ" id="QDU-dl-wA6"/>
+                        <segue destination="A5z-rV-qm2" kind="show" identifier="toDoneTodoDetail" id="XJe-XK-dga"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v99-rn-qm7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -916,13 +914,22 @@
                     <navigationItem key="navigationItem" title="Title" id="GzM-ki-ROM"/>
                     <size key="freeformSize" width="375" height="978"/>
                     <connections>
+                        <outlet property="deleteTaskButtonDesign" destination="1Cd-4J-NJp" id="cOq-wQ-O8B"/>
+                        <outlet property="editTaskButtonDesign" destination="FID-OV-tmx" id="TTC-t9-x4h"/>
                         <outlet property="endTimeLabel" destination="gGw-q1-Mbp" id="g1Z-Jo-lN7"/>
-                        <outlet property="notificaitionStatueLabel" destination="Ghs-PJ-reB" id="Svs-7y-sgz"/>
-                        <outlet property="notificaitionTimeLabel" destination="OAp-Xd-ilR" id="SeQ-9d-Egb"/>
-                        <outlet property="roopInterval" destination="LCz-VU-UnU" id="dXO-Rh-49n"/>
+                        <outlet property="memoTextView" destination="yd4-DN-QD2" id="bZo-uw-o9R"/>
+                        <outlet property="notCompletionTaskButtonDesign" destination="jBe-ou-hdD" id="2Em-7F-nXS"/>
+                        <outlet property="notificationStatueLabel" destination="Ghs-PJ-reB" id="fZP-V7-Xbb"/>
+                        <outlet property="notificationTimeLabel" destination="OAp-Xd-ilR" id="a1n-Eq-J7X"/>
+                        <outlet property="roopIntervalLabel" destination="LCz-VU-UnU" id="U3L-Fc-6jL"/>
                         <outlet property="startTimeLabel" destination="PdI-7Y-z4S" id="sRV-KF-BNz"/>
                         <outlet property="tagNameLabel" destination="NIn-Z9-7T6" id="9Su-Z4-ciZ"/>
                         <outlet property="taskTitle" destination="0cS-Rc-2vh" id="b3G-KD-e6i"/>
+                        <outlet property="終了日時" destination="KYu-40-mOM" id="ohT-c7-xRG"/>
+                        <outlet property="繰り返し" destination="dlU-zr-Kxt" id="e98-xD-pQK"/>
+                        <outlet property="通知の有無" destination="GWa-O0-ugB" id="Gp2-uM-0PD"/>
+                        <outlet property="通知時刻" destination="ShC-BY-Khm" id="zq8-qD-yK8"/>
+                        <outlet property="開始日時" destination="FbT-Yh-8FS" id="6j0-TA-KJb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4lv-bK-7fd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

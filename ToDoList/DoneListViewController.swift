@@ -87,8 +87,8 @@ class DoneListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedtodoData = doneTodoData[indexPath.row]
-        performSegue(withIdentifier: "toDoneTodoDetail", sender: selectedtodoData)
+        let selectedDonetodoData = doneTodoData[indexPath.row]
+        performSegue(withIdentifier: "toDoneTodoDetail", sender: selectedDonetodoData)
     }
     
     //セル削除・完了機能↓
@@ -128,6 +128,13 @@ class DoneListViewController: UIViewController, UITableViewDelegate, UITableView
     
     //セル削除・完了機能↑
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetail" {
+            let nextVC = segue.destination as! DoneDetailViewController
+            nextVC.selectedDonetodoData = sender as! [String: Any]
+        }
+    }
     
     
     /*
