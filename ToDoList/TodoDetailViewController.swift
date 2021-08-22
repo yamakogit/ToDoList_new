@@ -22,6 +22,7 @@ class TodoDetailViewController: UIViewController {
     @IBOutlet var editTaskButtonDesign: UIButton!
     @IBOutlet var deleteTaskButtonDesign: UIButton!
     
+    //commitするために入れる
     @IBOutlet var 開始日時: UILabel!
     @IBOutlet var 終了日時: UILabel!
     @IBOutlet var 繰り返し: UILabel!
